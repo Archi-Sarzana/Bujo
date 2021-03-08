@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      target="_blank"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      rel="stylesheet"
+    />
+    <link href="css/login.css" rel="stylesheet" />
+    
+
+    <!--Load Jquery first-->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="Js/login.js"></script>
+
+    <title>Login Form</title>
+  </head>
+  <body class= "index">
+    <div id="form_wrapper">
+      <div id="form_left">
+        <img src="Images/icon.png" alt="LOGO" />
+      </div>
+      <div id="form_right">
+        <!-- <form class="form" method="post" action="#"> -->
+          <form action="#" method="post" onsubmit = return home.html></form>
+          <div class="input_container">
+            <i class="fas fa-envelope"></i>
+            <input
+              placeholder="Email"
+              type="email"
+              name="Email"
+              id="email"
+              class="input_field"
+            />
+          </div>
+          <div class="input_container">
+            <i class="fas fa-lock"></i>
+            <input
+              placeholder="Password"
+              type="password"
+              name="Password"
+              id="password"
+              class="input_field"
+            />
+          </div>
+          <div>
+            <button
+              href="home.html"
+              type="submit"
+              value="Login"
+              id="input_submit"
+              class="input_field"
+            >
+              Login
+            </button>
+          </div>
+          <span>Forgot <a href="#"> Username / Password ?</a></span>
+          <span id="create_account">
+            <a href="#">Create your account ➡ </a>
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
